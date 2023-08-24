@@ -6,10 +6,10 @@ The API response will be a JSON object containing the following fields:
 
 | Field          | Type   | Description                                       |
 |----------------|--------|---------------------------------------------------|
-| ipVersion      | string | The IP version (e.g., "4" for IPv4).              |
+| ipVersion      | int    | The IP version (e.g., "4" for IPv4).              |
 | ipAddress      | string | The IP address for which geolocation information is provided. |
-| latitude       | string | The latitude coordinate of the IP address location.|
-| longitude      | string | The longitude coordinate of the IP address location.|
+| latitude       | float  | The latitude coordinate of the IP address location.|
+| longitude      | float  | The longitude coordinate of the IP address location.|
 | countryName    | string | The name of the country where the IP address is located.|
 | countryCode    | string | The ISO 3166-1 alpha-2 country code of the IP address location.|
 | timeZone       | string | The time zone offset of the IP address location.|
