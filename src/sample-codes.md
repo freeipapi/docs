@@ -65,7 +65,8 @@ public class Main {
 const axios = require('axios');
 
 const ipAddress = "{IP-ADDRESS}";
-const url = `https://freeipapi.com/api/json/${ipAddress}`;
+const url = `https://freeipapi.com/api/json/${ipAddress}`; // to get specific ip's info
+// const url = `https://freeipapi.com/api/json/`; // to get current request's ip info
 
 axios.get(url)
     .then(response => {
@@ -81,7 +82,8 @@ axios.get(url)
 
 ```javascript
 const ipAddress = "{IP-ADDRESS}";
-const url = `https://freeipapi.com/api/json/${ipAddress}`;
+const url = `https://freeipapi.com/api/json/`; // to get current request's ip info
+// const url = `https://freeipapi.com/api/json/${ipAddress}`; // to get specific ip's info
 
 $.get(url, function (data) {
     console.log(data);

@@ -6,7 +6,7 @@ The API response will be a JSON object containing the following fields:
 
 | Field          | Type   | Description                                       |
 |----------------|--------|---------------------------------------------------|
-| ipVersion      | string | The IP version (e.g., "4" for IPv4).              |
+| ipVersion      | string | The IP version (e.g., 4 for IPv4).              |
 | ipAddress      | string | The IP address for which geolocation information is provided. |
 | latitude       | string | The latitude coordinate of the IP address location.|
 | longitude      | string | The longitude coordinate of the IP address location.|
@@ -36,10 +36,10 @@ The API uses standard HTTP status codes to indicate the success or failure of a 
 
 ```json
 {
- "ipVersion": "4",
+ "ipVersion": 4,
  "ipAddress": "77.111.245.13",
- "latitude": "58.416588",
- "longitude": "15.616713",
+ "latitude": 58.416588,
+ "longitude": 15.616713,
  "countryName": "Sweden",
  "countryCode": "SE",
  "timeZone": "+02:00",
